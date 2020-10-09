@@ -115,3 +115,72 @@
   y: 198;
   fill: #DCDCDC;
 }
+
+#myDate {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  x: 5;
+  y: 70;
+  fill: white;
+}
+
+#myStepsIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 75;
+  fill: white;
+}
+
+#myStepsText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 60;
+  y: 95;
+  fill: white;
+}
+
+#myHeartIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 105;
+  fill: white;
+}
+
+#myHeartText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 60;
+  y: 125;
+  fill: white;
+}
+
+#myFlightsIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 135;
+  fill: white;
+}
+
+#myFlightsText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 60;
+  y: 155;
+  fill: white;
+}

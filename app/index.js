@@ -7,6 +7,7 @@ import { display } from "display";
 import { today } from 'user-activity';
 import { battery } from "power";
 
+
 // Update the clock every minute
 clock.granularity = "minutes";
 
