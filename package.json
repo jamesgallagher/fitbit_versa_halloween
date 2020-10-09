@@ -5,7 +5,7 @@
   "fitbit": {
     "appUUID": "14bf5894-442c-4263-8942-3ccf1c17ce33",
     "appType": "clockface",
-    "appDisplayName": "JamesTestClock",
+    "appDisplayName": "HalloweenClock",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
@@ -17,7 +17,7 @@
     ],
     "i18n": {
       "en-US": {
-        "name": "JamesTestClock"
+        "name": "HalloweenClock"
       }
     },
     "defaultLanguage": "en-US"

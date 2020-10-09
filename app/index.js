@@ -2,6 +2,8 @@ import clock from "clock";
 import document from "document";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
+import { HeartRateSensor } from "heart-rate";
+import { display } from "display";
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -9,6 +11,7 @@ clock.granularity = "minutes";
 // Get a handle on the <text> element
 const myTime = document.getElementById("myTime");
 const myDate = document.getElementById("myDate");
+const myHeartText = document.getElementById("myHeartText");
 
 const _days = {
   0: 'SUN',
@@ -51,4 +54,16 @@ clock.ontick = (evt) => {
   let mins = util.zeroPad(today.getMinutes());
   myTime.text = `${hours}:${mins}`; 
   myDate.text = `${_days[today.getDay()]}, ${today.getDate()} ${_months[today.getMonth()]}`;
+}
+
+if (HeartRateSensor) {
+  const hrm = new HeartRateSensor();
+  hrm.addEventListener("reading", () => {
+    myHeartText.text = `${hrm.heartRate}`;
+  });
+  display.addEventListener("change", () => {
+    // Automatically stop the sensor when the screen is off to conserve battery
+    display.on ? hrm.start() : hrm.stop();
+  });
+  hrm.start();
 }
