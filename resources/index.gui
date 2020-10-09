@@ -1,0 +1,5 @@
+<svg class="background">
+  <image id="HalloweenBackground"  width="100%" height="100%" href="images/Backdrop.png" />
+  <text id="myTime" />
+  <text id="myDate" />
+</svg>
