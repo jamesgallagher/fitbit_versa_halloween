@@ -4,6 +4,7 @@ import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import { HeartRateSensor } from "heart-rate";
 import { display } from "display";
+import { today } from 'user-activity';
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -12,6 +13,7 @@ clock.granularity = "minutes";
 const myTime = document.getElementById("myTime");
 const myDate = document.getElementById("myDate");
 const myHeartText = document.getElementById("myHeartText");
+const myStepsText = document.getElementById("myStepsText");
 
 const _days = {
   0: 'SUN',
@@ -36,6 +38,16 @@ const _months = {
   9: 'OCT',
   10: 'NOV',
   11: 'DEC'
+}
+
+// Set the steps on first load
+myStepsText.text = today.adjusted.steps;
+
+// Update the steps each time the screen comes on
+display.onchange = function() {
+  if (display.on) {
+    myStepsText.text = today.adjusted.steps;
+  }
 }
 
 // Update the <text> element every tick with the current time
