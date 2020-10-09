@@ -5,6 +5,8 @@ import * as util from "../common/utils";
 import { HeartRateSensor } from "heart-rate";
 import { display } from "display";
 import { today } from 'user-activity';
+import { battery } from "power";
+
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -13,7 +15,9 @@ clock.granularity = "minutes";
 const myTime = document.getElementById("myTime");
 const myDate = document.getElementById("myDate");
 const myHeartText = document.getElementById("myHeartText");
-const myStepsText = document.getElementById("myStepsText");
+const myStepsText = document.getElementById("myStepsText"); 
+const myFloorsText = document.getElementById("myFloorsText");
+const myBatteryText = document.getElementById("myBatteryText");
 
 const _days = {
   0: 'SUN',
@@ -42,11 +46,15 @@ const _months = {
 
 // Set the steps on first load
 myStepsText.text = today.adjusted.steps;
+myFloorsText.text = today.adjusted.elevationGain;
+myBatteryText.text = Math.floor(battery.chargeLevel) + "%";
 
 // Update the steps each time the screen comes on
 display.onchange = function() {
   if (display.on) {
     myStepsText.text = today.adjusted.steps;
+    myFloorsText.text = today.adjusted.elevationGain;
+    myBatteryText.text = Math.floor(battery.chargeLevel) + "%";
   }
 }
 

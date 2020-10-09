@@ -24,7 +24,96 @@
   text-length: 32;
   x: 5;
   y: 50;
-  fill: white;
+  fill: #DCDCDC;
+}
+
+#myDate {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  x: 5;
+  y: 70;
+  fill: #808080;
+}
+
+#myStepsIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 85;
+  fill: #DCDCDC;
+}
+
+#myStepsText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 65;
+  y: 105;
+  fill: #DCDCDC;
+}
+
+#myHeartIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 115;
+  fill: #DCDCDC;
+}
+
+#myHeartText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 65;
+  y: 138;
+  fill: #DCDCDC;
+}
+
+#myFloorsIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 145;
+  fill: #DCDCDC;
+}
+
+#myFloorsText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 65;
+  y: 168;
+  fill: #DCDCDC;
+}
+
+#myBatteryIcon {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 3;
+  y: 175;
+  fill: #DCDCDC;
+}
+
+#myBatteryText {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 65;
+  y: 198;
+  fill: #DCDCDC;
 }
 
 #myDate {

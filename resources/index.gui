@@ -4,16 +4,12 @@
       <text id="myTime" />
       <text id="myDate" />
       <image id="myStepsIcon" width="30" height="30" href="images/steps_icon.png" />
-      <text id="myStepsText"> PLACEHOLDER </text>
+      <text id="myStepsText" />
       <image id="myHeartIcon" width="30" height="30" href="images/heart_icon.png" />
-      <image id="myHeartIcon" width="30" height="30" href="images/steps_icon.png" />
       <text id="myHeartText" />
-      <image id="myFlightsIcon" width="30" height="30" href="images/steps_icon.png" />
-      <text id="myFlightsText"> PLACEHOLDER </text>
+      <image id="myFloorsIcon" width="30" height="30" href="images/stairs_icon.png" />
+      <text id="myFloorsText" />
+      <image id="myBatteryIcon" width="30" height="30" href="images/battery_icon.png" />
+      <text id="myBatteryText" />
   </svg>
 </svg>
-  
-  
-  
-
-  
